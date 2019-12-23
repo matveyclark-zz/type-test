@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20191221202834) do
   end
 
   create_table "tests", force: :cascade do |t|
+    t.string "name"
     t.string "content"
     t.string "language"
     t.string "difficulty"

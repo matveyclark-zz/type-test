@@ -8,8 +8,8 @@
 user1 = User.create(username: 'MattC', first_name: 'Matthew', last_name: 'Clark', password: 'Pwnfish2010')
 user2 = User.create(username: 'Charles', first_name: 'Sergey', last_name: 'Dmitriev', password: 'testing')
 
-test1 = Test.create(content: 'Content for keyboard test', language: 'English', difficulty: 'Easy')
-test2 = Test.create(content: 'Content for another test', language: 'Russian', difficulty: 'Medium')
+test1 = Test.create(name: 'Test for Beginners', content: 'Content for keyboard test', language: 'English', difficulty: 'Easy')
+test2 = Test.create(name: 'Getting harder...', content: 'Content for another test', language: 'Russian', difficulty: 'Medium')
 
 test_session1 = TestSession.create(user_id: user1.id, test_id: test1.id)
 test_session2 = TestSession.create(user_id: user2.id, test_id: test2.id)

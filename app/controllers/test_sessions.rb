@@ -1,3 +1,0 @@
-class TestSessionsController < ApplicationController
-
-end

@@ -7,9 +7,7 @@ Rails.application.routes.draw do
 
   # Routes for registering a new user
 
-  get '/users/new' => 'users#new', as: 'new_user'
-
-  post '/users' => 'users#create', as: 'users'
+  resources :users, only: [:new, :create]
 
   # Routes for logging in for existing users
 
@@ -18,4 +16,16 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
 
   delete '/logout' => 'sessions#destroy', as: 'logout'
+
+  # Routes for selecting tests by Users
+
+  resources :tests, only: [:index, :show]
+
+  # Routes to create a test session 
+
+  resources :test_sessions, only: [:create, :show]
+
+  # Routes to create and view reports after tests
+
+  resources :reports, only: [:create, :show]
 end

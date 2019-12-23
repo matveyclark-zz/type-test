@@ -3,6 +3,7 @@
 
     <h1>Hello there, <%= current_user.first_name %> </h1>
 
+    <%= button_to 'Start New Test', tests_path, method: :get %>
     <%= link_to 'Logout', logout_path, method: :delete %>
 
 <% else %>

@@ -1,0 +1,15 @@
+<%# Conditional rendering for welcoming new users %>
+<% if logged_in? %>
+
+    <h1>Hello there, <%= current_user.first_name %> </h1>
+
+    <%= link_to 'Logout', logout_path, method: :delete %>
+
+<% else %>
+
+    <h1>Hello, please register to improve your typing skills now!</h1>
+
+    <%= button_to 'Register', new_user_path, method: :get %>
+    <%= button_to 'Login', login_path, method: :get %>
+
+<% end %>

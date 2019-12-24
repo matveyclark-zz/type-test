@@ -14,4 +14,9 @@ class TestSession < ApplicationRecord
         self.test.content
     end
 
+    # Get the starting time of the test
+    def test_time_track
+        Time.now
+    end
+
 end

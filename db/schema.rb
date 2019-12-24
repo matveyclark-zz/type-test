@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(version: 20191224100631) do
   create_table "test_sessions", force: :cascade do |t|
     t.integer "user_id"
     t.integer "test_id"
+    t.datetime "start_time"
+    t.datetime "end_time"
     t.string "user_input"
   end
 

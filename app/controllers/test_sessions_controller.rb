@@ -3,6 +3,8 @@ class TestSessionsController < ApplicationController
     # Create a test sessions with the current user and test id
     def create
         test_session = TestSession.create(test_session_params)
+        test_session[:start_time] = test_session.test_time_track
+        test_session.save
         redirect_to test_session_path(test_session)
     end
 
@@ -15,6 +17,8 @@ class TestSessionsController < ApplicationController
     def update
         test_session = TestSession.find(params[:id])
         test_session.update(test_session_params)
+        test_session[:end_time] = test_session.test_time_track
+        test_session.save
         redirect_to test_complete_path
     end
 

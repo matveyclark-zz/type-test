@@ -13,6 +13,8 @@ class ReportsController < ApplicationController
     # Create a new report from the params in the test_session show page
     def create
         report = Report.create(report_params)
+        report[:grade] = report.test_grade
+        report.save
         redirect_to report_path(report)
     end
 

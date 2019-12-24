@@ -16,7 +16,7 @@ class Report < ApplicationRecord
         test.name
     end
 
-    # Produce a percentage grade for the test using the similart_text gem
+    # Produce a percentage grade for the test using the similar_text gem
     def test_grade
         input = self.test_session.user_input
         test_content = test.content

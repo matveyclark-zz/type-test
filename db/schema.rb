@@ -15,7 +15,6 @@ ActiveRecord::Schema.define(version: 20191224100631) do
   create_table "reports", force: :cascade do |t|
     t.integer "test_session_id"
     t.integer "grade"
-    t.string "improvements"
   end
 
   create_table "test_sessions", force: :cascade do |t|

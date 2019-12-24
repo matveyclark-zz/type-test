@@ -20485,3 +20485,1671 @@ puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
 puma (3.12.2) lib/puma/server.rb:476:in `process_client'
 puma (3.12.2) lib/puma/server.rb:334:in `block in run'
 puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:10:02 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 192ms (Views: 187.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:04 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/logout" for ::1 at 2019-12-24 21:10:04 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"P9hQhKerZ1frEJ4suB4kliKlSZ8sN1XJ6BstwwynmynmxfKeiU2Gp+87wJeSRjzI5FzT9W09ht8RbD3hM2KoyA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-24 21:10:04 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:07 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2019-12-24 21:10:07 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:09 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-12-24 21:10:12 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u54aBVI0cmQYBrWNrCkKk7Y5nxqXta8/rIJ4cchhsTZig7gffNKTlBwt6zaGcRLNcMAFcNa/fClV9WhT96SC1w==", "username"=>"MattC", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "MattC"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 253ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-24 21:10:13 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:15 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/reports" for ::1 at 2019-12-24 21:10:15 +0000
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 3], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 4], ["LIMIT", 1]]
+  Rendered reports/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 53ms (Views: 37.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/tests" for ::1 at 2019-12-24 21:10:18 +0000
+Processing by TestsController#index as HTML
+  Rendering tests/index.html.erb within layouts/application
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests"[0m
+  Rendered tests/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:20 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/tests/1" for ::1 at 2019-12-24 21:10:23 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/test_sessions" for ::1 at 2019-12-24 21:10:24 +0000
+Processing by TestSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8+0qPWM767s+7TccOtqGhXtw41Va+3Z4YoGR+bU+E70ReTvZgRrXIuYNAZDkpq/LOa7qdCqOd5qpTKkxuOpvmg==", "test_session"=>{"test_id"=>"1", "user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 1], ["test_id", 1]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "start_time" = ? WHERE "test_sessions"."id" = ?[0m  [["start_time", "2019-12-24 21:10:24.250559"], ["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/6
+Completed 302 Found in 9ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/test_sessions/6" for ::1 at 2019-12-24 21:10:24 +0000
+Processing by TestSessionsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTestSession Load (0.2ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering test_sessions/show.html.erb within layouts/application
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered test_sessions/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:26 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/test_sessions/6" for ::1 at 2019-12-24 21:10:27 +0000
+Processing by TestSessionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Qa2BEDUgUIcaj5kQC2sd6dwnif756t28CANiR+j2cpCYsCMKG8axdx6kx6shMwW3Gt4TlLjgDqrxdHJl1zNBcQ==", "test_session"=>{"user_input"=>"asdasdasdasd"}, "commit"=>"Submit", "id"=>"6"}
+  [1m[36mTestSession Load (0.3ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "user_input" = ? WHERE "test_sessions"."id" = ?[0m  [["user_input", "asdasdasdasd"], ["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "end_time" = ? WHERE "test_sessions"."id" = ?[0m  [["end_time", "2019-12-24 21:10:27.757119"], ["id", 6]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/6/test_complete
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/test_sessions/6/test_complete" for ::1 at 2019-12-24 21:10:27 +0000
+Processing by TestSessionsController#test_complete as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering test_sessions/test_complete.html.erb within layouts/application
+  Rendered test_sessions/test_complete.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reports" for ::1 at 2019-12-24 21:10:28 +0000
+Processing by ReportsController#create as HTML
+  Parameters: {"authenticity_token"=>"tZos3eJZn4Af5TdRhmrSKs1TZ5VSuEV2IwR6uLJxt6Bsh47HzL9+cBvOaeqsMsp0C6r9/xOylmDac2qajbSEQQ==", "report"=>{"test_session_id"=>"6"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id") VALUES (?)[0m  [["test_session_id", 6]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "reports" SET "grade" = ? WHERE "reports"."id" = ?[0m  [["grade", 4], ["id", 6]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/reports/6
+Completed 302 Found in 8ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/reports/6" for ::1 at 2019-12-24 21:10:28 +0000
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering reports/show.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reports/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:30 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/reports" for ::1 at 2019-12-24 21:10:45 +0000
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mTestSession Load (0.3ms)[0m  [1m[34mSELECT "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 3], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 4], ["LIMIT", 1]]
+  [1m[36mCACHE Test Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 6], ["LIMIT", 1]]
+  Rendered reports/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/reports/6" for ::1 at 2019-12-24 21:10:47 +0000
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering reports/show.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reports/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:47 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:52 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:10:52 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tests" for ::1 at 2019-12-24 21:10:53 +0000
+Processing by TestsController#index as HTML
+  Rendering tests/index.html.erb within layouts/application
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests"[0m
+  Rendered tests/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tests/2" for ::1 at 2019-12-24 21:10:54 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:55 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/test_sessions" for ::1 at 2019-12-24 21:10:56 +0000
+Processing by TestSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ZU60oXTbiUFyCE+oV+2D8nDo6VKYkO+3xA/77ieRX1aH2qVFlvq12KroeSSJkaq8Mjbgc+jl7lUPwsMmKkUjcQ==", "test_session"=>{"test_id"=>"2", "user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 1], ["test_id", 2]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "start_time" = ? WHERE "test_sessions"."id" = ?[0m  [["start_time", "2019-12-24 21:10:56.393149"], ["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/7
+Completed 302 Found in 8ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/test_sessions/7" for ::1 at 2019-12-24 21:10:56 +0000
+Processing by TestSessionsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering test_sessions/show.html.erb within layouts/application
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered test_sessions/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:10:58 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/test_sessions/7" for ::1 at 2019-12-24 21:11:01 +0000
+Processing by TestSessionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/efeGPzmxufpgI2g5OgHJdzO664fOb7nYL8BXPayBkQk+nwC0gAnF+2r0xvOsB97GjdxxF4zbfGZyBF+yXc1pQ==", "test_session"=>{"user_input"=>"wolf"}, "commit"=>"Submit", "id"=>"7"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "user_input" = ? WHERE "test_sessions"."id" = ?[0m  [["user_input", "wolf"], ["id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "end_time" = ? WHERE "test_sessions"."id" = ?[0m  [["end_time", "2019-12-24 21:11:01.564381"], ["id", 7]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/7/test_complete
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/test_sessions/7/test_complete" for ::1 at 2019-12-24 21:11:01 +0000
+Processing by TestSessionsController#test_complete as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering test_sessions/test_complete.html.erb within layouts/application
+  Rendered test_sessions/test_complete.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reports" for ::1 at 2019-12-24 21:11:03 +0000
+Processing by ReportsController#create as HTML
+  Parameters: {"authenticity_token"=>"6OYL2H4KzVLJUwkYpoqbEOgLgLQaYUb5i7XQqvq+OQkx+6nCUOwsos14V6OM0oNOLvIa3ltrle9ywsCIxXsK6A==", "report"=>{"test_session_id"=>"7"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id") VALUES (?)[0m  [["test_session_id", 7]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "reports" SET "grade" = ? WHERE "reports"."id" = ?[0m  [["grade", 1], ["id", 7]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/reports/7
+Completed 302 Found in 7ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/reports/7" for ::1 at 2019-12-24 21:11:03 +0000
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering reports/show.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered reports/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:11:05 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:11:09 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-12-24 21:11:11 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rH8jKCspFs2ztmA4qUFuWt3UUZGHnigMyOvig68Rn/F1YoEyBc/3PbedPoODGXYEGy3L+8aU+xoxnPKhkNSsEA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-24 21:11:11 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:11:13 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:11:25 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 197ms (Views: 191.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:11:28 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20191221202751)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "first_name" varchar, "last_name" varchar, "age" integer)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202751"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTestSessions (20191221202810)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "test_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "test_id" integer, "start_time" datetime, "end_time" datetime)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202810"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTests (20191221202821)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "tests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" varchar, "language" varchar, "difficulty" varchar)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202821"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReports (20191221202834)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test_session_id" integer, "grade" integer)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202834"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddUserInputToTestSessions (20191224100631)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "test_sessions" ADD "user_input" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191224100631"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-24 21:41:28.408650"], ["updated_at", "2019-12-24 21:41:28.408650"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first_name", "last_name") VALUES (?, ?, ?, ?)[0m  [["username", "MattC"], ["password_digest", "$2a$12$dj8M1Q32E.tu//6VH71cmefMBYdXBxFmgnrSTmht/Qom1fbZm7CBW"], ["first_name", "Matthew"], ["last_name", "Clark"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first_name", "last_name") VALUES (?, ?, ?, ?)[0m  [["username", "Charles"], ["password_digest", "$2a$12$bQSPAc3C3mc.KGj7v6tVpuKA5kyKh3P5aT/xAbp5XNO/t1tUVHh9W"], ["first_name", "Sergey"], ["last_name", "Dmitriev"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Warm Up"], ["content", "After a team scores a goal, the kick-off is taken by the other team. A throw-in is taken when the ball crosses a sideline and leaves the field. The two basic soccer rules for a proper throw-in are to have both feet on the ground and to throw the ball with both hands over the head."], ["language", "English"], ["difficulty", "Easy"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Good Practice"], ["content", "A wolf comes upon a lamb and, in order to justify taking its life, accuses it of various misdemeanours, all of which the lamb proves to be impossible. Losing patience, the wolf says the offences must have been committed by someone else in the family and that it does not propose to delay its meal by enquiring any further. The morals drawn are that the tyrant can always find an excuse for his tyranny, and that the unjust will not listen to the reasoning of the innocent."], ["language", "English"], ["difficulty", "Medium"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Expert Typist"], ["content", "Zebras are several species of African equids (horse family) united by their distinctive black and white striped coats. Their stripes come in different patterns, unique to each individual. They are generally social animals that live in small harems to large herds. Unlike their closest relatives the horses and donkeys, zebras have never been truly domesticated. The unique stripes of zebras make them one of the animals most familiar to people. They occur in a variety of habitats, such as grasslands, savannas, woodlands, thorny scrublands, mountains, and coastal hills. However, various anthropogenic factors have had a severe impact on zebra populations, in particular hunting for skins and habitat destruction."], ["language", "English"], ["difficulty", "Hard"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 1], ["test_id", 1]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 2], ["test_id", 2]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first_name", "last_name") VALUES (?, ?, ?, ?)[0m  [["username", "MattC"], ["password_digest", "$2a$12$Smo.n2tVL27SjLYd1kTklemF0vNlcexg8v97K.Hrpf2UzVviMsIqC"], ["first_name", "Matthew"], ["last_name", "Clark"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first_name", "last_name") VALUES (?, ?, ?, ?)[0m  [["username", "Charles"], ["password_digest", "$2a$12$ykcNxc0HjUgdP4GMR81VIuly232vSs4Z706OleUU7GkHA8hTBFYRK"], ["first_name", "Sergey"], ["last_name", "Dmitriev"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Warm Up"], ["content", "After a team scores a goal, the kick-off is taken by the other team. A throw-in is taken when the ball crosses a sideline and leaves the field. The two basic soccer rules for a proper throw-in are to have both feet on the ground and to throw the ball with both hands over the head."], ["language", "English"], ["difficulty", "Easy"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Good Practice"], ["content", "A wolf comes upon a lamb and, in order to justify taking its life, accuses it of various misdemeanours, all of which the lamb proves to be impossible. Losing patience, the wolf says the offences must have been committed by someone else in the family and that it does not propose to delay its meal by enquiring any further. The morals drawn are that the tyrant can always find an excuse for his tyranny, and that the unjust will not listen to the reasoning of the innocent."], ["language", "English"], ["difficulty", "Medium"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Expert Typist"], ["content", "Zebras are several species of African equids (horse family) united by their distinctive black and white striped coats. Their stripes come in different patterns, unique to each individual. They are generally social animals that live in small harems to large herds. Unlike their closest relatives the horses and donkeys, zebras have never been truly domesticated. The unique stripes of zebras make them one of the animals most familiar to people. They occur in a variety of habitats, such as grasslands, savannas, woodlands, thorny scrublands, mountains, and coastal hills. However, various anthropogenic factors have had a severe impact on zebra populations, in particular hunting for skins and habitat destruction."], ["language", "English"], ["difficulty", "Hard"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 3], ["test_id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 4], ["test_id", 5]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id", "grade") VALUES (?, ?)[0m  [["test_session_id", 3], ["grade", 100]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id", "grade") VALUES (?, ?)[0m  [["test_session_id", 4], ["grade", 86]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2019-12-24 21:42:49 +0000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 170ms (Views: 164.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:42:51 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/login" for ::1 at 2019-12-24 21:42:52 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:42:54 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-12-24 21:42:56 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iPEVljr8ilyuLwI7hsFZM/0WvssMj2sHBfUM4KSB4rNR7LeMFBprrKoEXICsmUFtO+8koU2FuBH8ghzCm0TRUg==", "username"=>"MattC", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "MattC"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 261ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2019-12-24 21:42:56 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/reports" for ::1 at 2019-12-24 21:42:57 +0000
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 1], ["LIMIT", 1]]
+  Rendered reports/index.html.erb within layouts/application (26.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"reports", :id=>nil}, missing required keys: [:id]):
+     6: 
+     7:     <li>
+     8:     
+     9:         <%= link_to session.test_name, report_path(session.report) %>
+    10: 
+    11:     </li>
+    12: 
+  
+app/views/reports/index.html.erb:9:in `block in _app_views_reports_index_html_erb___2184484501034333291_70162124988760'
+app/views/reports/index.html.erb:5:in `_app_views_reports_index_html_erb___2184484501034333291_70162124988760'
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:42:58 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:43:05 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/tests" for ::1 at 2019-12-24 21:43:06 +0000
+Processing by TestsController#index as HTML
+  Rendering tests/index.html.erb within layouts/application
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests"[0m
+  Rendered tests/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:43:08 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/tests/4" for ::1 at 2019-12-24 21:43:13 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTest Load (0.4ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 11.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tests/2" for ::1 at 2019-12-24 21:43:14 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tests/3" for ::1 at 2019-12-24 21:43:16 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20191221202751)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "password_digest" varchar, "first_name" varchar, "last_name" varchar, "age" integer)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202751"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTestSessions (20191221202810)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "test_sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "test_id" integer, "start_time" datetime, "end_time" datetime)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202810"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTests (20191221202821)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "tests" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" varchar, "language" varchar, "difficulty" varchar)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202821"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateReports (20191221202834)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "reports" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "test_session_id" integer, "grade" integer)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191221202834"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddUserInputToTestSessions (20191224100631)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "test_sessions" ADD "user_input" varchar[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191224100631"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-12-24 21:43:35.688386"], ["updated_at", "2019-12-24 21:43:35.688386"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first_name", "last_name") VALUES (?, ?, ?, ?)[0m  [["username", "MattC"], ["password_digest", "$2a$12$OAxm3PEYmtet5XU3KLETiOxIdREHMPrRRbYHA6O6P9mF7R.GwXDqu"], ["first_name", "Matthew"], ["last_name", "Clark"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "first_name", "last_name") VALUES (?, ?, ?, ?)[0m  [["username", "Charles"], ["password_digest", "$2a$12$sTyr4nXI8vYdt4to3/qLEuY3Uvfkl9Fn4BIXhM101qe1krVAv4KDK"], ["first_name", "Sergey"], ["last_name", "Dmitriev"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Warm Up"], ["content", "After a team scores a goal, the kick-off is taken by the other team. A throw-in is taken when the ball crosses a sideline and leaves the field. The two basic soccer rules for a proper throw-in are to have both feet on the ground and to throw the ball with both hands over the head."], ["language", "English"], ["difficulty", "Easy"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Good Practice"], ["content", "A wolf comes upon a lamb and, in order to justify taking its life, accuses it of various misdemeanours, all of which the lamb proves to be impossible. Losing patience, the wolf says the offences must have been committed by someone else in the family and that it does not propose to delay its meal by enquiring any further. The morals drawn are that the tyrant can always find an excuse for his tyranny, and that the unjust will not listen to the reasoning of the innocent."], ["language", "English"], ["difficulty", "Medium"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "tests" ("name", "content", "language", "difficulty") VALUES (?, ?, ?, ?)[0m  [["name", "Expert Typist"], ["content", "Zebras are several species of African equids (horse family) united by their distinctive black and white striped coats. Their stripes come in different patterns, unique to each individual. They are generally social animals that live in small harems to large herds. Unlike their closest relatives the horses and donkeys, zebras have never been truly domesticated. The unique stripes of zebras make them one of the animals most familiar to people. They occur in a variety of habitats, such as grasslands, savannas, woodlands, thorny scrublands, mountains, and coastal hills. However, various anthropogenic factors have had a severe impact on zebra populations, in particular hunting for skins and habitat destruction."], ["language", "English"], ["difficulty", "Hard"]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 1], ["test_id", 1]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 2], ["test_id", 2]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.2ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id", "grade") VALUES (?, ?)[0m  [["test_session_id", 1], ["grade", 100]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id", "grade") VALUES (?, ?)[0m  [["test_session_id", 2], ["grade", 86]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2019-12-24 21:43:46 +0000
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 198ms (Views: 193.0ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for ::1 at 2019-12-24 21:43:48 +0000
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"nNPv4kFgcVoYVh1ooxsTxsFm4GXzf9HBMJDrLtsnOZhFzk34b4aQqhx9Q9OJQwuYB596D7J1AtfJ5/sM5OIKeQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-24 21:43:48 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/login" for ::1 at 2019-12-24 21:43:49 +0000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:43:51 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/login" for ::1 at 2019-12-24 21:43:53 +0000
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q6fhDjdPG/aFmjCKfwKWKCKU+/A3irtGUyxasOx/cpxyukMUGan6BoGxbjFVWo525G1hmnaAaFCqW0qS07pBfQ==", "username"=>"MattC", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "MattC"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 253ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-24 21:43:54 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tests" for ::1 at 2019-12-24 21:43:56 +0000
+Processing by TestsController#index as HTML
+  Rendering tests/index.html.erb within layouts/application
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests"[0m
+  Rendered tests/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tests/1" for ::1 at 2019-12-24 21:43:57 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTest Load (0.3ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/test_sessions" for ::1 at 2019-12-24 21:43:58 +0000
+Processing by TestSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"x2PQX2/2JmjopFSvKJ1dysFQqLqYk5Mm7OLfXjeg3YIl98G7jdca8TBEYiP24XSEg46hm+jmksQnL+eWOnShpQ==", "test_session"=>{"test_id"=>"1", "user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 1], ["test_id", 1]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "test_sessions" SET "start_time" = ? WHERE "test_sessions"."id" = ?[0m  [["start_time", "2019-12-24 21:43:58.164371"], ["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/3
+Completed 302 Found in 30ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/test_sessions/3" for ::1 at 2019-12-24 21:43:58 +0000
+Processing by TestSessionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTestSession Load (0.2ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering test_sessions/show.html.erb within layouts/application
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered test_sessions/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:44:00 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/test_sessions/3" for ::1 at 2019-12-24 21:44:05 +0000
+Processing by TestSessionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v2BR71UT7XHLv6Fhdpl5YFOwd4ZenYsOM3ZUcn+yNM5mffP1e/UMgc+U/9pcwWE+lUnt7B+XWBjKAURQQHcHLw==", "test_session"=>{"user_input"=>"After a team"}, "commit"=>"Submit", "id"=>"3"}
+  [1m[36mTestSession Load (0.2ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "user_input" = ? WHERE "test_sessions"."id" = ?[0m  [["user_input", "After a team"], ["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "end_time" = ? WHERE "test_sessions"."id" = ?[0m  [["end_time", "2019-12-24 21:44:05.860403"], ["id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/3/test_complete
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/test_sessions/3/test_complete" for ::1 at 2019-12-24 21:44:05 +0000
+Processing by TestSessionsController#test_complete as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering test_sessions/test_complete.html.erb within layouts/application
+  Rendered test_sessions/test_complete.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reports" for ::1 at 2019-12-24 21:44:07 +0000
+Processing by ReportsController#create as HTML
+  Parameters: {"authenticity_token"=>"AzB/G1lpRvjRA3KfBGKpAVGl16uW8j2d9IJRIRu20/raLd0Bd4+nCNUoLCQuOrFfl1xNwdf47osN9UEDJHPgGw==", "report"=>{"test_session_id"=>"3"}}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id") VALUES (?)[0m  [["test_session_id", 3]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "reports" SET "grade" = ? WHERE "reports"."id" = ?[0m  [["grade", 8], ["id", 3]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/reports/3
+Completed 302 Found in 16ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/reports/3" for ::1 at 2019-12-24 21:44:07 +0000
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering reports/show.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered reports/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:44:09 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:44:15 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reports" for ::1 at 2019-12-24 21:44:16 +0000
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mTestSession Load (0.2ms)[0m  [1m[34mSELECT "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Test Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 3], ["LIMIT", 1]]
+  Rendered reports/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 22ms (Views: 13.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:44:17 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/tests" for ::1 at 2019-12-24 21:44:20 +0000
+Processing by TestsController#index as HTML
+  Rendering tests/index.html.erb within layouts/application
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT "tests".* FROM "tests"[0m
+  Rendered tests/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tests/3" for ::1 at 2019-12-24 21:44:20 +0000
+Processing by TestsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mTest Load (0.2ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering tests/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered tests/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/test_sessions" for ::1 at 2019-12-24 21:44:22 +0000
+Processing by TestSessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"t+awoGdbcWdjxL9fwaYqJvz/woBX8T8OKm3YXYsN881VcqFEhXpN/rskidMf2gNoviHLoSeEPuzhoOCVhtmP6g==", "test_session"=>{"test_id"=>"3", "user_id"=>"1"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "test_sessions" ("user_id", "test_id") VALUES (?, ?)[0m  [["user_id", 1], ["test_id", 3]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "start_time" = ? WHERE "test_sessions"."id" = ?[0m  [["start_time", "2019-12-24 21:44:22.075326"], ["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/4
+Completed 302 Found in 9ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/test_sessions/4" for ::1 at 2019-12-24 21:44:22 +0000
+Processing by TestSessionsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering test_sessions/show.html.erb within layouts/application
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered test_sessions/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:44:24 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/test_sessions/4" for ::1 at 2019-12-24 21:44:24 +0000
+Processing by TestSessionsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/Y9JfDCTNn8EIALkdA6h+097mfW4+nkGj2JX/L8o/CskkutmHnXXjwALXF9eVrmliYIDn/nwqhB2FUfegO3Pyg==", "test_session"=>{"user_input"=>"asdasdasdadsasdas"}, "commit"=>"Submit", "id"=>"4"}
+  [1m[36mTestSession Load (0.2ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTest Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "user_input" = ? WHERE "test_sessions"."id" = ?[0m  [["user_input", "asdasdasdadsasdas"], ["id", 4]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "test_sessions" SET "end_time" = ? WHERE "test_sessions"."id" = ?[0m  [["end_time", "2019-12-24 21:44:24.665811"], ["id", 4]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/test_sessions/4/test_complete
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/test_sessions/4/test_complete" for ::1 at 2019-12-24 21:44:24 +0000
+Processing by TestSessionsController#test_complete as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering test_sessions/test_complete.html.erb within layouts/application
+  Rendered test_sessions/test_complete.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/reports" for ::1 at 2019-12-24 21:44:25 +0000
+Processing by ReportsController#create as HTML
+  Parameters: {"authenticity_token"=>"D2vI+1uGTA6YdpGAWGHKGt2Xsbe0n1AKRxrMxqlCJ8DWdmrhdWCt/pxdzztyOdJEG24r3fWVgxy+bdzklocUIQ==", "report"=>{"test_session_id"=>"4"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "reports" ("test_session_id") VALUES (?)[0m  [["test_session_id", 4]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "reports" SET "grade" = ? WHERE "reports"."id" = ?[0m  [["grade", 4], ["id", 4]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/reports/4
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/reports/4" for ::1 at 2019-12-24 21:44:25 +0000
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering reports/show.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered reports/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 14ms (Views: 11.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:44:27 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-24 21:44:29 +0000
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/reports" for ::1 at 2019-12-24 21:44:31 +0000
+Processing by ReportsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering reports/index.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Test Load (0.0ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 3], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mReport Load (0.1ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."test_session_id" = ? LIMIT ?[0m  [["test_session_id", 4], ["LIMIT", 1]]
+  Rendered reports/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/asset-manifest.json" for ::1 at 2019-12-24 21:44:31 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/asset-manifest.json"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/reports/4" for ::1 at 2019-12-24 21:44:32 +0000
+Processing by ReportsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mReport Load (0.2ms)[0m  [1m[34mSELECT  "reports".* FROM "reports" WHERE "reports"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering reports/show.html.erb within layouts/application
+  [1m[36mTestSession Load (0.1ms)[0m  [1m[34mSELECT  "test_sessions".* FROM "test_sessions" WHERE "test_sessions"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mTest Load (0.1ms)[0m  [1m[34mSELECT  "tests".* FROM "tests" WHERE "tests"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered reports/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.4ms)
+
+

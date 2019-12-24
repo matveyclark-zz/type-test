@@ -29,5 +29,5 @@ Rails.application.routes.draw do
 
   # Routes to create and view reports after tests
 
-  resources :reports, only: [:create, :show, :index]
+  resources :reports, only: [:create, :show, :index, :update]
 end

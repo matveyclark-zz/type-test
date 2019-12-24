@@ -15,8 +15,8 @@ test3 = Test.create(name: 'Expert Typist', content: 'Zebras are several species 
 test_session1 = TestSession.create(user_id: user1.id, test_id: test1.id)
 test_session2 = TestSession.create(user_id: user2.id, test_id: test2.id)
 
-report1 = Report.create(grade: '100%', improvements: 'Speed, accuracy', test_session_id: test_session1.id)
-report2 = Report.create(grade: '86%', improvements: 'Puctuation, accuracy', test_session_id: test_session2.id)
+report1 = Report.create(grade: '100%', test_session_id: test_session1.id)
+report2 = Report.create(grade: '86%', test_session_id: test_session2.id)
 
 
 

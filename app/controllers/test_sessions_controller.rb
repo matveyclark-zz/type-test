@@ -11,11 +11,24 @@ class TestSessionsController < ApplicationController
         @test_session = TestSession.find(params[:id])
     end
 
+    # Adds the user input to the test session
+    def update
+        test_session = TestSession.find(params[:id])
+        test_session.update(test_session_params)
+        redirect_to test_complete_path
+    end
+
+    # Renders the test_complete page to generate report
+    def test_complete
+        @test_session = TestSession.find(params[:id])
+        render 'test_complete'
+    end
+
     private
 
     # Strong params for test sessions
     def test_session_params
-        params.require(:test).permit(:user_id, :test_id)
+        params.require(:test_session).permit(:user_id, :test_id, :user_input)
     end
 
 end

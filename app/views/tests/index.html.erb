@@ -6,9 +6,8 @@
 
         <li>
         
-            <%= test.name %>
+            <%= link_to test.name, test_path(test)  %>
 
-            <%= link_to 'Take Test', test_sessions_path(:test => {:test_id => test.id, :user_id => current_user.id}), method: :post %>
 
         </li>
 

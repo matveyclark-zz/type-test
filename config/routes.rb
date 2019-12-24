@@ -21,9 +21,11 @@ Rails.application.routes.draw do
 
   resources :tests, only: [:index, :show]
 
-  # Routes to create a test session 
+  # Routes to create sessions with content 
 
-  resources :test_sessions, only: [:create, :show]
+  resources :test_sessions, only: [:create, :show, :update]
+
+  get '/test_sessions/:id/test_complete' => 'test_sessions#test_complete', as: 'test_complete'
 
   # Routes to create and view reports after tests
 

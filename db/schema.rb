@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191221202834) do
+ActiveRecord::Schema.define(version: 20191224100631) do
 
   create_table "reports", force: :cascade do |t|
     t.integer "test_session_id"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20191221202834) do
   create_table "test_sessions", force: :cascade do |t|
     t.integer "user_id"
     t.integer "test_id"
+    t.string "user_input"
   end
 
   create_table "tests", force: :cascade do |t|

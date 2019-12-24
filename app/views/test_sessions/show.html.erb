@@ -2,3 +2,4 @@
 
 <p> <%= @test_session.test_content %> </p>
 
+<%= button_to 'Submit', reports_path, params: {:report => {test_session_id: @test_session.id}} %>

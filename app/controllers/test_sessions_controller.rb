@@ -30,7 +30,7 @@ class TestSessionsController < ApplicationController
 
     private
 
-    # Strong params for test sessions
+    # Strong params for test_sessions
     def test_session_params
         params.require(:test_session).permit(:user_id, :test_id, :user_input)
     end

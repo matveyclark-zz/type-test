@@ -6,8 +6,8 @@
 
     <li>
     
-        <%= session.report%>
-    
+        <%= link_to session.test_name, report_path(session.report) %>
+
     </li>
 
 <% end %>

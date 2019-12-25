@@ -6,8 +6,24 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
   </head>
-
+    <header>
+      <div class="wrapper">
+        <nav class="navigation">
+          <p class="logo"><span class="red">Type</span>Test</p>
+          <div class="cta">
+            <% if logged_in? %>
+              <p>Hello, <%= current_user.first_name %> </p>
+              <%= button_to 'Logout', logout_path, method: :delete %>
+            <% else %>
+              <%= link_to 'Register', new_user_path, method: :get %>
+              <%= link_to 'Login', login_path, method: :get %>
+            <% end %>
+          </div>
+        </nav>
+      </div>
+    </header>
   <body>
     <%= yield %>
   </body>

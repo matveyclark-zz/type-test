@@ -24,11 +24,14 @@ class Report < ApplicationRecord
         grade
     end
 
-    # Show the total time elapsed to complete the test
-    def time_elapsed
-        start_time = self.test_session[:start_time]
-        end_time = self.test_session[:end_time]
-        time_elapsed = end_time - start_time
-        time_elapsed
+    # Get the elapsed time for the report's test session
+    def report_time_elapsed
+        self.test_session.time_elapsed
     end
+
+    # Get words per minute for the reports test_session
+    def report_words_per_minute
+        self.test_session.words_per_minute
+    end
+
 end

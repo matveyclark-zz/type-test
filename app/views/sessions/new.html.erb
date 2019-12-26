@@ -1,13 +1,25 @@
-<h1>Please enter your details into the fields below</h1>
+<section class="login">
+    <div class="wrapper">
+        <div class="main-content">
+            <div class="main-left">
+                <img class="main-image reg" src="https://i.ibb.co/wW11m8q/01.png" alt="01" border="0">
+            </div>
+            <div class="main-right registration">
+                <h1 class="reg-heading">welcome back...</h1>
+                <p class="main-para">please fill in your login details below</p>
 
-<%= form_tag '/login' do %>
+                <%= form_tag '/login' do %>
 
-    <%= label_tag :username %>
-    <%= text_field_tag :username %>
+                    <%= label_tag :username %>
+                    <%= text_field_tag :username %>
 
-    <%= label_tag :password %>
-    <%= password_field_tag :password %>
+                    <%= label_tag :password %>
+                    <%= password_field_tag :password %>
 
-    <%= submit_tag 'Login' %>
+                    <%= submit_tag 'Login', :class => 'btn' %>
 
-<% end %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>

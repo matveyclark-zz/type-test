@@ -115,3 +115,50 @@ body {
     display: block;
     margin-left: auto;
 }
+
+.reg {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.reg-heading {
+    margin-bottom: .2em;
+    font-size: 2.5rem;
+}
+
+.main-right input {
+    display: block;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: .5em 1em;
+    margin: .3em 0;
+}
+
+.main-right .btn {
+    padding: 1em 1.6em 1em;
+    border-radius: 4px;
+    border: 1px solid #000;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: .2s ease;
+    color: #000;
+    display: inline-block;
+    width: 30%;
+    cursor: pointer;
+    margin-right: 2em;
+}
+
+.main-right .btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.reg-submit {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-right.registration {
+    width: 45%;
+}

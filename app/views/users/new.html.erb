@@ -1,22 +1,37 @@
-<h1>Please enter a new Username and Password below...</h1>
+<section class="register">
+    <div class="wrapper">
+        <div class="main-content">
+            <div class="main-left">
+                <img class="main-image reg" src="https://i.ibb.co/xsknbfN/07.png" alt="Lightbulb illustration" border="0">
+            </div>
+            <div class="main-right registration">
+                <h1 class="reg-heading">get started with your account...</h1>
+                <p class="main-para">create an account to get in-depth reports and save your test progression</p>
 
-<%= form_for @user do |f| %>
+                <%= form_for @user do |f| %>
 
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
+                    <%= f.label :first_name %>
+                    <%= f.text_field :first_name %>
 
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
+                    <%= f.label :last_name %>
+                    <%= f.text_field :last_name %>
 
-    <%= f.label :age %>
-    <%= f.number_field :age %>
+                    <%= f.label :age %>
+                    <%= f.number_field :age %>
 
-    <%= f.label :username %>
-    <%= f.text_field :username %>
+                    <%= f.label :username %>
+                    <%= f.text_field :username %>
 
-    <%= f.label :password %>
-    <%= f.password_field :password %>
+                    <%= f.label :password %>
+                    <%= f.password_field :password %>
 
-    <%= f.submit %>
+                    <div class="reg-submit">
+                        <%= f.submit 'create account', :class => "btn" %>
+                        <p>..already registered? <%= link_to "log in", login_path %></p>
+                    </div>
 
-<% end %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>

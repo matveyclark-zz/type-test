@@ -3,3 +3,5 @@
 <h1> Grade: <%= @report.grade %> </h1>
 
 <h1>Time elapsed: <%= @report.report_time_elapsed %> </h1>
+
+<% Gchart.line(:title => 'Sexy Charts!', :title_color => 'FF0000', :title_size => '20') %>

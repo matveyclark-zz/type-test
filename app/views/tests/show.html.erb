@@ -1,9 +1,13 @@
-<h1> <%= @test.name %> </h1>
+<section class="test-show">
+    <div class="wrapper">
+        <h1 class="tests-para test-show"> <%= @test.name %> </h1>
 
-<h2> <%= @test.content %> </h2>
+        <h2 class="test-content"> <%= @test.content %> </h2>
 
-<p> <%= @test.language %> </p>
+        <p class="test-desc"> Language: <%= @test.language %> </p>
 
-<p> <%= @test.difficulty %> </p>
+        <p class="test-desc"> Difficulty: <%= @test.difficulty %> </p>
 
-<%= button_to 'Begin Test', test_sessions_path, params: {:test_session => {test_id: @test.id, user_id: current_user.id}} %>
+        <%= button_to 'begin test', test_sessions_path, params: {:test_session => {test_id: @test.id, user_id: current_user.id}} %>
+    </div>
+</section>

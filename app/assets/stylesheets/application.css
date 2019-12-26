@@ -51,6 +51,10 @@ body {
     color: #000;
 }
 
+.greeting-text {
+    margin-right: 2em;
+}
+
 .cta {
     display: flex;
     justify-content: space-between;
@@ -161,4 +165,153 @@ body {
 
 .main-right.registration {
     width: 45%;
+}
+
+
+/* Tests index page */
+
+.tests-para {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3em;
+}
+
+.test-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-para.test {
+    font-size: 1rem;
+    margin-top: 2em;
+}
+
+.tests-list {
+    list-style: none;
+}
+
+.test-item {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+    margin-bottom: .5em;
+    display: flex;
+    padding: 2em .5em;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.test-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.test-item:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.test-item:hover + a {
+    color: #fff;
+}
+
+/* Test show page */
+
+.test-show {
+    font-weight: 900;
+}
+
+.test-content {
+    margin-top: 2em;
+    font-weight: 400;
+}
+
+.test-desc {
+    margin-top: 2em;
+    font-weight: 400;
+}
+
+form.button_to {
+    display: inline-block;
+    margin-left: 42.5%;
+}
+
+.button_to input[type=submit] {
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+
+.button_to input[type=submit]:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+}
+
+/* Test session page */
+
+.session-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.test-session-content {
+    margin-top: 3em;
+    font-size: 2rem;
+}
+
+form.edit_test_session {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form.edit_test_session label {
+    margin: 2em 0;
+    font-size: 1rem;
+    opacity: 0.5;
+}
+
+form.edit_test_session input[type=text] {
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 3em;
+}
+
+
+form.edit_test_session input[type=submit] {
+    margin-top: 1.5em;
+    background-color: #fff;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+
+form.edit_test_session input[type=submit]:hover {
+    transform: scale(1.1);
+    background-color: #000;
+    color: #fff;
+}
+
+/* Test complete page */
+
+.success-photo {
+    margin-left: 33%;
+    margin-bottom: 2em;
+    width: 40%;
 }

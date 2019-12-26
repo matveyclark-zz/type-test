@@ -1,3 +1,7 @@
-<h1>Complete!</h1>
-
-<%= button_to 'Generate report', reports_path, params: {:report => {test_session_id: @test_session.id}} %>
+<section class="test-complete">
+    <div class="wrapper">
+        <h1 class="tests-para">congratulations</h1>
+        <img class="success-photo" src="https://i.ibb.co/x5CVtGF/02.png" alt="success-illustration" border="0">
+        <%= button_to 'generate report', reports_path, params: {:report => {test_session_id: @test_session.id}} %>
+    </div>
+</section>

@@ -1,16 +1,25 @@
-<h1>Please select from the following available tests</h1>
+<section class="tests">
+    <div class="wrapper">
+        <h1 class="tests-para">please select from the following available tests</h1>
+        <div class="test-info">
+            <p class="main-para test">Name</p>
+            <p class="main-para test">Difficulty</p>
+            <p class="main-para test">Language</p>
+        </div>
+        <ul class="tests-list">
 
-<ul>
+            <% @tests.each do |test| %>
 
-    <% @tests.each do |test| %>
+                <li class="test-item">
+                
+                    <p><%= link_to test.name, test_path(test)  %></p>
+                    <p> <%= test.difficulty %> </p>
+                    <p> <%= test.language %> </p>
 
-        <li>
-        
-            <%= link_to test.name, test_path(test)  %>
+                </li>
 
+            <% end %>
 
-        </li>
-
-    <% end %>
-
-</ul>
+        </ul>
+    </div>
+</section>

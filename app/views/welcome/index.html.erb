@@ -5,11 +5,11 @@
             <div class="main-left">
                 <% if logged_in? %>
 
-                    <h1 class="main-headeing">Hello there, <%= current_user.first_name %> </h1>
+                    <h1 class="main-heading">improve speed,<br> accuracy and overall <br> skills on the keys!</h1>
+                    <p class="main-para">take a quick test to find out how accurately <br> and quickly you type (and how to improve!)</p>
 
-                    <%= button_to 'Start New Test', tests_path, method: :get %>
+                    <%= link_to 'Start New Test', tests_path, method: :get %>
                     <%= link_to 'Completed Tests', reports_path %>
-                    <%= link_to 'Logout', logout_path, method: :delete %>
 
                 <% else %>
 

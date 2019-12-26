@@ -1,12 +1,16 @@
-<h1> <%= @test_session.test_name %> </h1>
+<section class="test-session">
+    <div class="wrapper">
+        <div class="session-content">
+            <p class="test-session-content"> <%= @test_session.test_content %> </p>
 
-<p> <%= @test_session.test_content %> </p>
+            <%= form_for @test_session do |f| %>
 
-<%= form_for @test_session do |f| %>
+                <%= f.label 'input the above content' %>
+                <%= f.text_field :user_input %>
 
-    <%= f.label :user_input %>
-    <%= f.text_field :user_input %>
+                <%= f.submit 'submit' %>
 
-    <%= f.submit 'Submit' %>
-
-<% end %>
+            <% end %>
+        </div>
+    </div>
+</section>

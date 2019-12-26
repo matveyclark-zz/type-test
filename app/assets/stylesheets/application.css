@@ -60,6 +60,10 @@ body {
     justify-content: space-between;
 }
 
+.cta a:visited {
+    color: #000;
+}
+
 .main-left a,
 .main-left a:visited {
     padding: 1em 1.6em 1em;

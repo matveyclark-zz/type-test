@@ -1,7 +1,14 @@
 <section class="test-complete">
     <div class="wrapper">
-        <h1 class="tests-para">congratulations</h1>
-        <img class="success-photo" src="https://i.ibb.co/x5CVtGF/02.png" alt="success-illustration" border="0">
-        <%= button_to 'generate report', reports_path, params: {:report => {test_session_id: @test_session.id}} %>
+        <div class="main-content">
+            <div class="main-left">
+                <h1 class="main-heading test-para">Congratulations!</h1>
+                <p class="main-para">Press the button below to generate <br> an in-depth report of your results</p>
+                <%= button_to 'Generate Report', reports_path, params: {:report => {test_session_id: @test_session.id}} %>
+            </div>
+            <div class="main-right">
+                <img class="success-photo" src="https://i.ibb.co/x5CVtGF/02.png" alt="success-illustration" border="0">
+            </div>
+        </div>
     </div>
 </section>

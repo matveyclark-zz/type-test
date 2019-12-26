@@ -16,8 +16,10 @@
                     <%= label_tag :password %>
                     <%= password_field_tag :password %>
 
-                    <%= submit_tag 'Login', :class => 'btn' %>
-
+                    <div class="login-registration">
+                        <%= submit_tag 'Login', :class => 'btn' %>
+                        <p>...dont have an account yet? <%= link_to 'Register', new_user_path %></p>
+                    </div>
                 <% end %>
             </div>
         </div>

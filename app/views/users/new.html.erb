@@ -8,6 +8,25 @@
                 <h1 class="reg-heading">Get started with your account...</h1>
                 <p class="main-para">Create an account to get in-depth reports and save your test progression</p>
 
+                <%# Validations for creation of the user %>
+                <% if @user.errors.full_messages.length > 0 %>
+
+                    <ul>
+                    
+                        <% @user.errors.full_messages.each do |message| %>
+
+                            <li>
+                            
+                                <%= message %>
+
+                            </li>
+
+                        <% end %>
+                    
+                    </ul>
+
+                <% end %>
+
                 <%= form_for @user do |f| %>
 
                     <%= f.label :first_name %>

@@ -7,9 +7,13 @@ class UsersController < ApplicationController
 
     # Create a new User to the database and activate a session
     def create
-        user = User.create(user_params)
-        session[:user_id] = user.id
-        redirect_to home_path
+        @user = User.create(user_params)
+        if @user.valid?
+            session[:user_id] = @user.id
+            redirect_to home_path
+        else
+            render 'new'
+        end
     end
 
     private

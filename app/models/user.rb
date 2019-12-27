@@ -12,6 +12,18 @@ class User < ApplicationRecord
         presence: true
     }
 
+    validates :first_name, {
+        presence: true
+    }
+
+    validates :last_name, {
+        presence: true
+    }
+
+    validates :age, {
+        presence: true
+    }
+
     # Show the users full name
     def to_s
         self.first_name + " " + self.last_name

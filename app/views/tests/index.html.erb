@@ -1,20 +1,16 @@
 <section class="tests">
     <div class="wrapper">
-        <h1 class="tests-para">please select from the following available tests</h1>
-        <div class="test-info">
-            <p class="main-para test">Name</p>
-            <p class="main-para test">Difficulty</p>
-            <p class="main-para test">Language</p>
-        </div>
+        <h1 class="tests-para">Please select from the following available tests</h1>
         <ul class="tests-list">
 
             <% @tests.each do |test| %>
 
                 <li class="test-item">
                 
-                    <p><%= link_to test.name, test_path(test)  %></p>
-                    <p> <%= test.difficulty %> </p>
-                    <p> <%= test.language %> </p>
+                    <p><span class="test-item__desc"></span> <%=  test.name %></p>
+                    <p><span class="test-item__desc">Difficulty:</span> <%= test.difficulty %> </p>
+                    <p><span class="test-item__desc">Language:</span> <%= test.language %> </p>
+                    <%= link_to "Start", test_path(test) %>
 
                 </li>
 

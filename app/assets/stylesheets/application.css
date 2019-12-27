@@ -189,11 +189,6 @@ body {
     margin-top: 3em;
 }
 
-.test-info {
-    display: flex;
-    justify-content: space-between;
-}
-
 .main-para.test {
     font-size: 1rem;
     margin-top: 2em;
@@ -201,6 +196,9 @@ body {
 
 .tests-list {
     list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
 }
 
 .test-item {
@@ -210,10 +208,11 @@ body {
     border-radius: 3px;
     margin-bottom: .5em;
     display: flex;
+    flex-direction: column;
     padding: 2em .5em;
     justify-content: space-between;
-    cursor: pointer;
     transition: .2s ease;
+    padding: 2em;
 }
 
 .test-item a {
@@ -221,12 +220,23 @@ body {
     color: #000;
 }
 
-.test-item:hover {
-    background-color: #000;
-    color: #fff;
+.test-item__desc {
+    opacity: .6;
 }
 
-.test-item:hover + a {
+.test-item p:not(:last-child) {
+    margin-bottom: 2em;
+}
+
+.test-item a {
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #000;
+    transition: .2s ease;
+}
+
+.test-item a:hover {
+    background-color: #000;
     color: #fff;
 }
 

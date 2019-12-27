@@ -135,6 +135,10 @@ body {
     font-size: 2.5rem;
 }
 
+.user_notice {
+    margin-bottom: 1em;
+}
+
 .login-registration {
     display: flex;
     align-items: flex-end;

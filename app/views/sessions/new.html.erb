@@ -8,6 +8,11 @@
                 <h1 class="reg-heading">Welcome back...</h1>
                 <p class="main-para">Please fill in your login details below</p>
 
+                <%# Show the flash hash with notice if it exists - handled in sessions controller %>
+                <% if flash[:notice] %>
+                    <h4 class="user_notice"><%= flash[:notice] %></h4>
+                <% end %>
+
                 <%= form_tag '/login' do %>
 
                     <%= label_tag :username %>

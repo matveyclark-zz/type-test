@@ -2,15 +2,17 @@
     <div class="wrapper">
         <% if @sessions.length > 0 %>
 
-            <h1>All Reports</h1>
+            <h1 class="tests-para">All Reports</h1>
 
-            <ul>
+            <ul class="reports-index-list">
 
             <% @sessions.each do |session| %>
 
-                <li>
+                <li class="reports-list-link">
                     
                     <%= link_to session.test_name, report_path(session.report) %>
+                    <p>Grade: <%= session.test_report_grade %></p>
+                    <p>Time elapsed: <%= session.time_elapsed %> </p>
 
                 </li>
 

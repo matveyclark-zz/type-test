@@ -18,6 +18,11 @@ class TestSession < ApplicationRecord
     def test_time_track
         Time.now
     end
+    
+    # Get the grade of the test
+    def test_report_grade
+        self.report.grade
+    end
 
     # Show the total time elapsed to complete the test
     def time_elapsed

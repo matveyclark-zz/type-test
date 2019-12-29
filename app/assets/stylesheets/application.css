@@ -361,3 +361,14 @@ form.edit_test_session input[type=submit]:hover {
 .reports-list-link a:visited {
     color: #000;
 }
+
+/* Test show page */
+
+.instructions-list {
+    margin: 2em 0;
+}
+
+.instructions-list-item {
+    padding: .8em;
+    font-weight: 400;
+}

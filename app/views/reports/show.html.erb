@@ -4,5 +4,7 @@
 
 <h1>Time elapsed: <%= @report.report_time_elapsed %> </h1>
 
+<h1>Words per minute: <%= @report.report_words_per_minute %> </h1>
+
 
 <%= pie_chart "Your result" => @report.grade, "" => 100 - @report.grade %>

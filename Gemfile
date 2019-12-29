@@ -33,7 +33,6 @@ gem 'bcrypt', '~> 3.1.7'
 # Gem for comparing the similarities of strings
 gem 'similar_text'
 
-# Gem for implementing charts in the reports
 gem 'chartkick'
 
 # Use Capistrano for deployment

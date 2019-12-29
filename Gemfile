@@ -33,8 +33,6 @@ gem 'bcrypt', '~> 3.1.7'
 # Gem for comparing the similarities of strings
 gem 'similar_text'
 
-gem 'chartkick'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

@@ -21,7 +21,7 @@ class Report < ApplicationRecord
         input = self.test_session.user_input
         test_content = test.content
         grade = input.similar(test_content)
-        grade
+        grade.round(1)
     end
 
     # Get the elapsed time for the report's test session

@@ -29,14 +29,14 @@ class TestSession < ApplicationRecord
         start_time = self.start_time
         end_time = self.end_time
         time_elapsed = end_time - start_time
-        time_elapsed
+        time_elapsed.round(1)
     end
 
     # Calculate the words per minute
     def words_per_minute
         word_count = self.user_input.split.length
         wpm = (word_count / self.time_elapsed) * 60
-        wpm
+        wpm.round
     end
 
 end

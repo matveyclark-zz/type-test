@@ -6,7 +6,7 @@
             <%= form_for @test_session do |f| %>
 
                 <%= f.label 'input the above content' %>
-                <%= f.text_field :user_input, :required => true %>
+                <%= f.text_field :user_input, :required => true, :autocomplete => 'off' %>
 
                 <%= f.submit 'submit' %>
 

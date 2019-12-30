@@ -36,7 +36,9 @@ class Report < ApplicationRecord
 
     # Get amount of type user could type war and peace
     def minutes_to_write_war_and_peace
-        587287 / self.report_words_per_minute
+        minutes = 587287 / self.report_words_per_minute
+        hours = minutes / 60
+        hours.round
     end
 
     # Show how the users test accuracy relates to them
@@ -48,7 +50,7 @@ class Report < ApplicationRecord
     # Show the relation to the average typist if user is slower
     def slower_relation_to_average_typist
         result = 1 - self.relation_to_average_typing_speed
-        result.round(2)
+        result.round(2) * 100
     end
 
     # Compare users speed to the fastest typist in the world

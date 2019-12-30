@@ -1,24 +1,32 @@
-# README
+# Type Test web app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a web app designed to test and produce reports on a User's typing ability.
 
-Things you may want to cover:
+## Install
 
-* Ruby version
+### Clone this repository
 
-* System dependencies
+```shell
+git clone git@github.com:matveyclark/type-test.git
+cd type-test
+```
 
-* Configuration
+### Install dependencies
 
-* Database creation
+Using [Bundler](https://github.com/bundler/bundler)
 
-* Database initialization
+```shell
+bundle install
+```
 
-* How to run the test suite
+### Initialize the database
 
-* Services (job queues, cache servers, search engines, etc.)
+```shell
+rake db:create db:migrate db:seed
+```
 
-* Deployment instructions
+### Serve
 
-* ...
+```shell
+rails s
+```

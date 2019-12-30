@@ -4,12 +4,12 @@
         <h1 class="tests-para">You scored: <span class="test-score"><%= @report.test_grade %>%</span></h1>
         <h1 class="tests-para">The time it took you to complete the test was: <span class="test-score"><%= @report.report_time_elapsed %>s.</span></h1>
         <h1 class="tests-para">You typed at an average speed of <span class="test-score"><%= @report.report_words_per_minute %></span> words per minute. </h1>
-        <h3 class="report-subheading">More stats:</h3>
-
-        <ul class="report-stats-list">
-            <li>
-                <p class="report-stats-list-item">It would take you <%= @report.minutes_to_write_war_and_peace %> minutes to write War and Peace </p>
-            </li>
-        </ul>
+        <h1 class="tests-para">It would take you <span class="test-score"><%= @report.minutes_to_write_war_and_peace %></span> minutes to write War and Peace </h1>
+        <% if @report.relation_to_average_typing_speed > 1 %>
+            <h1 class="tests-para">You are <span class="test-score"><%= @report.relation_to_average_typing_speed %></span> times faster than the average typist. (41 words / minute)</h1>
+        <% else %>
+            <h1 class="tests-para">You are <span class="test-score"><%= @report.slower_relation_to_average_typist %></span> times slower than the average typist.</h1>
+        <% end %>
+        <h1 class="tests-para">The worlds faster typist is <span class="test-score"><%= @report.fastest_in_the_world? %></span> times faster than you. </h1>
     </div>
 </section>

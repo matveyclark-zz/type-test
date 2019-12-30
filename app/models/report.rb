@@ -39,4 +39,22 @@ class Report < ApplicationRecord
         587287 / self.report_words_per_minute
     end
 
+    # Show how the users test accuracy relates to them
+    def relation_to_average_typing_speed
+        result = self.report_words_per_minute.to_f / 41
+        result.round(2)
+    end
+
+    # Show the relation to the average typist if user is slower
+    def slower_relation_to_average_typist
+        result = 1 - self.relation_to_average_typing_speed
+        result.round(2)
+    end
+
+    # Compare users speed to the fastest typist in the world
+    def fastest_in_the_world?
+        result = 216 / self.report_words_per_minute.to_f
+        result.round(2)
+    end
+
 end

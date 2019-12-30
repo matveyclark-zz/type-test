@@ -34,4 +34,9 @@ class Report < ApplicationRecord
         self.test_session.words_per_minute
     end
 
+    # Get amount of type user could type war and peace
+    def minutes_to_write_war_and_peace
+        587287 / self.report_words_per_minute
+    end
+
 end

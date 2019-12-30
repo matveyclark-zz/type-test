@@ -122,6 +122,12 @@ body {
     width: 90%;
     display: block;
     margin-left: auto;
+    display: block;
+}
+
+.home-image {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: top center;
 }
 
 .reg {
@@ -373,7 +379,7 @@ form.edit_test_session input[type=submit]:hover {
     font-weight: 400;
 }
 
-/* Reports page */
+/* Reports show page */
 
 .results-title {
     opacity: .6;
@@ -387,4 +393,18 @@ form.edit_test_session input[type=submit]:hover {
 
 .tests-para:nth-of-type(2) {
     margin-top: .5em;
+}
+
+.report-subheading {
+    text-transform: uppercase;
+    opacity: .6;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+/* Animation keyframes */
+
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
 }

@@ -1,6 +1,7 @@
 # Type Test web app
 
-This is a web app designed to test and produce reports on a User's typing ability.
+⌨️ This is a web app designed to test and produce reports on a User's typing ability. ⌨️
+This app was made as an accessible and easy-to-use tool to practice typing ability for free.
 
 ## Install
 

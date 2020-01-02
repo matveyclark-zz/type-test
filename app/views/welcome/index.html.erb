@@ -11,12 +11,19 @@
                     <%= link_to 'Start New Test', tests_path, method: :get %>
                     <%= link_to 'Completed Tests', reports_path %>
 
+                <% elsif admin_logged_in? %>
+
+                    <h1 class="main-heading">Manage accounts,<br> get stats <br> and figures.</h1>
+                    <p class="main-para">Here you can manage the inner workings <br> of the app and get statistical insights br regarding the models.</p>
+
+
                 <% else %>
                     <h1 class="main-heading">Improve speed,<br> accuracy and overall <br> skills on the keys!</h1>
                     <p class="main-para para-animate">Take a quick test to find out how accurately <br> and quickly you type (and how to improve!)</p>
 
                     <%= link_to 'Register', new_user_path %>
                     <%= link_to 'Login', login_path %>
+                    <p class="admin-login-btn">or <%= link_to 'login as Admin...', admin_login_path %></p>
 
                 <% end %>
             </div>

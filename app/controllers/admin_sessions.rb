@@ -1,5 +1,0 @@
-class AdminSessions < ApplicationController
-
-    
-
-end

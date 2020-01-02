@@ -34,6 +34,9 @@ Rails.application.routes.draw do
   # Routes for the admin sessions
 
   get '/admin/login' => 'admin_sessions#new', as: 'admin_login'
-  
+
+  post '/admin' => 'admin_sessions#create', as: 'admin'
+
+  delete '/admin/logout' => 'admin_sessions#destroy', as: 'admin_logout'
 
 end

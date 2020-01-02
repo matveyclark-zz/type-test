@@ -93,6 +93,19 @@ body {
     color: #000;
 }
 
+.main-left p.admin-login-btn a {
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    text-decoration: underline;
+    margin-top: .5em;
+}
+
+.main-left p.admin-login-btn a:hover {
+    transform: translateY(0);
+}
+
 .main {
     height: 100vh;
 }

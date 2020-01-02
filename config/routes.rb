@@ -39,4 +39,8 @@ Rails.application.routes.draw do
 
   delete '/admin/logout' => 'admin_sessions#destroy', as: 'admin_logout'
 
+  # Routes for the admin dashboard
+
+  get '/admin/dashboard' => 'admins#dashboard', as: 'admin_dashboard'
+
 end

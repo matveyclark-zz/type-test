@@ -33,5 +33,11 @@ class User < ApplicationRecord
     def all_sessions
         self.test_sessions
     end
+
+    # Find the student with the most test_sessions taken
+    def self.most_active_student
+        user = self.all.max_by { |user| user.test_sessions.length }
+        user.to_s
+    end
     
 end

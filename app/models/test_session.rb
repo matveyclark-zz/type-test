@@ -39,4 +39,10 @@ class TestSession < ApplicationRecord
         wpm.round
     end
 
+    # Find the test session with the highest score and return the full name of the user who submitted it
+    def self.highest_scoring_student
+        highest_test_session = TestSession.all.max_by { |test_session| test_session.report.grade }
+        highest_test_session.user
+    end
+
 end

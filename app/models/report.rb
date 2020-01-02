@@ -50,7 +50,8 @@ class Report < ApplicationRecord
     # Show the relation to the average typist if user is slower
     def slower_relation_to_average_typist
         result = 1 - self.relation_to_average_typing_speed
-        result.round(2) * 100
+        unrounded = result * 100
+        unrounded.round(2)
     end
 
     # Compare users speed to the fastest typist in the world

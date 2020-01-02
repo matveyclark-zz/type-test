@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20200102155538) do
     t.integer "test_id"
     t.datetime "start_time"
     t.datetime "end_time"
-    t.string "user_input"
+    t.string "user_input", default: " "
   end
 
   create_table "tests", force: :cascade do |t|

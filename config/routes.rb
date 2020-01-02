@@ -11,11 +11,11 @@ Rails.application.routes.draw do
 
   # Routes for logging in for existing users
 
-  get '/login' => 'sessions#new', as: 'login'
+  get '/login' => 'user_sessions#new', as: 'login'
 
-  post '/login' => 'sessions#create'
+  post '/login' => 'user_sessions#create'
 
-  delete '/logout' => 'sessions#destroy', as: 'logout'
+  delete '/logout' => 'user_sessions#destroy', as: 'logout'
 
   # Routes for selecting tests by Users
 
@@ -30,5 +30,10 @@ Rails.application.routes.draw do
   # Routes to create and view reports after tests
 
   resources :reports, only: [:create, :show, :index, :update]
+
+  # Routes for the admin sessions
+
+  get '/admin/login' => 'admin_sessions#new', as: 'admin_login'
+  
 
 end

@@ -10,7 +10,7 @@ test1 = Test.create(name: 'Warm Up', content: 'After a team scores a goal, the k
 test2 = Test.create(name: 'Good Practice', content: 'A wolf comes upon a lamb and, in order to justify taking its life, accuses it of various misdemeanours, all of which the lamb proves to be impossible. Losing patience, the wolf says the offences must have been committed by someone else in the family and that it does not propose to delay its meal by enquiring any further. The morals drawn are that the tyrant can always find an excuse for his tyranny, and that the unjust will not listen to the reasoning of the innocent.', language: 'English', difficulty: 'Medium')
 test3 = Test.create(name: 'Expert Typist', content: 'Zebras are several species of African equids (horse family) united by their distinctive black and white striped coats. Their stripes come in different patterns, unique to each individual. They are generally social animals that live in small harems to large herds. Unlike their closest relatives the horses and donkeys, zebras have never been truly domesticated. The unique stripes of zebras make them one of the animals most familiar to people. They occur in a variety of habitats, such as grasslands, savannas, woodlands, thorny scrublands, mountains, and coastal hills. However, various anthropogenic factors have had a severe impact on zebra populations, in particular hunting for skins and habitat destruction.', language: 'English', difficulty: 'Hard')
 
-admin1 = Admin.create(username: 'MatthewClark', password: 'Pwnfish2010' );
+admin1 = Admin.create(username: 'admin', password: 'admin' );
 
 
 

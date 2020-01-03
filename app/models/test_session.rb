@@ -45,4 +45,10 @@ class TestSession < ApplicationRecord
         highest_test_session.user
     end
 
+    # Find the student who completed the test the fastest
+    def self.student_with_fastest_test_completion
+        fastest_session = self.all.min_by { |test_session| test_session.time_elapsed }
+        fastest_session.user.to_s
+    end
+
 end

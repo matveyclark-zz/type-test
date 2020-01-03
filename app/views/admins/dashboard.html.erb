@@ -1,7 +1,75 @@
 <section class="admin-dashboard">
     <div class="wrapper">
-        <h1>Welcome to the admin dashboard!</h1>
-        <h1>The highest scoring test score belongs to: <%= TestSession.highest_scoring_student %></h1>
-        <h1>The most active user is: <%= User.most_active_student %></h1>
+        <h1 class="tests-para">Welcome to the admin dashboard!</h1>
+        <% if TestSession.all.length > 0 &&  %>
+            <h1 class="dashboard-stat">The highest scoring test score belongs to: <%= TestSession.highest_scoring_student %></h1>
+            <h1 class="dashboard-stat">The most active user is: <%= User.most_active_student %></h1>
+            <h1 class="dashboard-stat">The user with the fastest test session time is: <%= TestSession.student_with_fastest_test_completion %> </h1>
+        <% end %>
+        <h1 class="tests-para">Create a new user account: </h1>
+        <% if flash[:user_notice] %>
+            <%= flash[:user_notice] %>
+        <% end %>
+
+        <% if @user.errors.full_messages.length > 0 %>
+
+            <ul>
+
+            <% @user.errors.full_messages.each do |message| %>
+            
+                <li>
+                
+                    <%= message %>
+                
+                </li>
+
+            <% end %>
+            
+            </ul>
+
+        <% end %>
+        <%= form_for @user, :url => create_user_path, :html => {:class => 'admin_dashboard_user'} do |f| %>
+            
+            <%= f.label :first_name %>
+            <%= f.text_field :first_name %>
+
+            <%= f.label :last_name %>
+            <%= f.text_field :last_name %>
+
+            <%= f.label :age %>
+            <%= f.number_field :age %>
+
+            <%= f.label :username %>
+            <%= f.text_field :username %>
+
+            <%= f.label :password %>
+            <%= f.password_field :password %>
+
+            <%= f.submit 'Create User Account' %>
+
+        <% end %>
+
+        <% if flash[:test_notice] %>
+            <%= flash[:test_notice] %>
+        <% end %>
+
+        <h1 class="tests-para">Create a new test</h1>
+        <%= form_for @test, :url => create_test_path, :html => {:class => 'admin_dashboard_test'} do |f| %>
+
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+
+            <%= f.label :content %>
+            <%= f.text_field :content %>
+
+            <%= f.label :language %>
+            <%= f.text_field :language %>
+
+            <%= f.label :difficulty %>
+            <%= f.text_field :difficulty %>
+
+            <%= f.submit 'Create Test'%>
+
+        <% end %>
     </div>
 </section>

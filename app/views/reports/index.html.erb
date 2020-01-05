@@ -9,7 +9,7 @@
             <% @sessions.each do |session| %>
 
                 <li class="reports-list-link">
-                    <% unless session.user_input == ' ' %>
+                    <% unless session.user_input.nil? %>
                         <%= link_to session.test_name, report_path(session.report) %>
                         <p>Grade: <%= session.test_report_grade %></p>
                         <p>Time elapsed: <%= session.time_elapsed %> </p>

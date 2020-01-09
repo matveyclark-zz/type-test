@@ -1,7 +1,7 @@
 <section class="admin-dashboard">
     <div class="wrapper">
         <h1 class="tests-para">Welcome to the admin dashboard!</h1>
-        <% if TestSession.all.length > 0 &&  %>
+        <% if TestSession.all.length > 0 %>
             <h1 class="dashboard-stat">The highest scoring test score belongs to: <%= TestSession.highest_scoring_student %></h1>
             <h1 class="dashboard-stat">The most active user is: <%= User.most_active_student %></h1>
             <h1 class="dashboard-stat">The user with the fastest test session time is: <%= TestSession.student_with_fastest_test_completion %> </h1>

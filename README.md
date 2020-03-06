@@ -32,11 +32,11 @@ rake db:create db:migrate db:seed
 rails s
 ```
 
-### Create an account 
+# Create an account 
 Choose from the options on the homescreen to create an account on the platfiorm.
 ![homescreen](/images/home.png)
 
-### Select from available tests
+# Select from available tests
 Select any type test you would like to complete based on the difficulty level provided
 ![test-index](/images/tests.png)
 
